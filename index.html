@@ -371,11 +371,40 @@ figure.screen img{width:auto;max-width:100%;max-height:340px;margin:0 auto;backg
       <section id="s3">
         <div class="kicker"><span class="num">1</span> The MK-390 System</div>
         <h2>System Overview</h2>
-        <p>The MK-390 is a <strong>single-chamber ultrasonic cleaning system</strong>, specially designed for cleaning a variety of components in a water-based cleaning solution, with an integrated filtration unit. Overall machine size is approximately <strong>1650 × 1200 × 1162&nbsp;mm (L×W×H)</strong>.</p>
-        <p>Baskets of components are transferred manually by the operator. For heavy parts, an overhead hoist is recommended; loading and unloading of heavy parts is generally done from the hoist hook at the top of the tank.</p>
+        <p>The MK-390 is a <strong>single-chamber aqueous ultrasonic cleaning system</strong> with an integrated filtration unit, designed for batch cleaning of a wide range of engineered components in a water-based detergent solution. Parts are cleaned in baskets lowered into a single heated process tank, by the combined action of ultrasonic cavitation and solution turbulence, while continuous filtration keeps the bath clear. Overall machine size is approximately <strong>1650 × 1200 × 1162&nbsp;mm (L×W×H)</strong>.</p>
+        <p>Baskets of components are transferred manually by the operator. For heavy parts an overhead hoist is recommended; loading and unloading is then done from the hoist hook above the tank. The machine is mounted on lockable castors and is largely self-contained — it needs only a 3-phase electrical supply and clean water to operate.</p>
 
-        <h3>3.1 The Process Tank</h3>
-        <p>This is the main cleaning stage, where turbulence and ultrasonics work in tandem to clean the component. The ultrasonic effect reaches every area of the part; the mechanical vibrations dislodge contamination from the component into the cleaning solution. The single-stage cartridge filtration removes that contamination, keeping the bath clean and sustaining the cleaning level for longer.</p>
+        <h3>How the System Works</h3>
+        <p>Effective ultrasonic cleaning depends on four factors working together — <strong>cavitation, chemistry, temperature and time</strong>. The MK-390 brings all four to bear in a single tank:</p>
+        <ul>
+          <li><strong>Cavitation</strong> — three 25&nbsp;kHz generators drive tube resonators in the tank base. The sound waves form and violently collapse microscopic bubbles throughout the solution, producing an intense scrubbing action that reaches every wetted surface, including blind holes and recesses a brush cannot.</li>
+          <li><strong>Chemistry</strong> — an alkaline detergent at 10–15% lifts and emulsifies oils, greases and particulate soils so the cavitation can carry them away.</li>
+          <li><strong>Temperature</strong> — a heated bath (typically 55–65&nbsp;°C) markedly increases cavitation intensity and chemical activity.</li>
+          <li><strong>Time</strong> — each program sets the cleaning duration, so results are consistent and repeatable from batch to batch.</li>
+        </ul>
+        <p>Gentle solution turbulence works alongside the ultrasonics to flush loosened contamination away from the parts and into the filtration circuit.</p>
+
+        <h3>The Cleaning Cycle</h3>
+        <p>In normal use the operator loads a basket, closes the lid and starts the selected program. The controller then runs the cycle automatically:</p>
+        <ol class="flow">
+          <li><b>Pre-filtration</b> circulates and clears the bath before cleaning (time set per program).</li>
+          <li><b>Ultrasonic clean</b> runs the generators for the set cleaning time while the solution is held at temperature.</li>
+          <li><b>Post-filtration</b> polishes the bath afterwards, removing the soils just released.</li>
+          <li>The cycle ends; the operator raises the basket, lets it drain over the tank, and unloads.</li>
+        </ol>
+        <p>See <strong>Section&nbsp;3 — System Operation</strong> for how to select, edit and start programs from the touch panel.</p>
+
+        <h3>Filtration &amp; Bath Management</h3>
+        <p>Solution overflows the process tank into a <strong>weir (overflow) tank</strong>, from which the filtration pump draws it through a dual cartridge filter — a coarse <strong>125&nbsp;micron</strong> stage and a fine <strong>50&nbsp;micron</strong> stage — before returning it, clean, to the process tank. Removing particulate continuously keeps the bath clear, protects the finish on cleaned parts and extends solution life. The filter-housing pressure gauge shows when the cartridges are loading up and due for replacement.</p>
+
+        <h3>Heating &amp; Temperature Control</h3>
+        <p>Two 3-phase cartridge heaters (8&nbsp;kW total) bring the bath to temperature, with a PT100 RTD sensor feeding the controller for closed-loop control to the HMI set point. The tank is insulated with 9&nbsp;mm double-layer nitrile foam to retain heat and reduce running cost.</p>
+
+        <h3>Controls &amp; Monitoring</h3>
+        <p>The machine is controlled by an IDEC FT1A Touch combined PLC and touch-screen HMI. From the panel the operator selects cleaning programs, sets temperatures and cycle times, and can monitor the temperature, current and frequency of each ultrasonic generator. Protective interlocks — low bath level, weir level, lid position, over-temperature and emergency stop — stop the machine safely if a fault occurs.</p>
+
+        <h3>Process Tank — Specification</h3>
+        <p>The process tank is the heart of the machine: the single heated chamber where ultrasonic cleaning takes place. Its principal components and ratings are listed below.</p>
         <table class="spectable">
           <caption>Process tank — physical &amp; mechanical specification</caption>
           <tbody>
@@ -399,7 +428,6 @@ figure.screen img{width:auto;max-width:100%;max-height:340px;margin:0 auto;backg
             <tr><td>Lid-close sensor</td><td>Magnetic switch (Banner SI-MAGB2SM)</td></tr>
           </tbody>
         </table>
-        <div class="note info"><span class="t">Routine maintenance schedule</span>Check the liquid level in the tank <strong>daily</strong>. Check the process parameters <strong>daily</strong>. Check the bath concentration <strong>every shift</strong>. Check the heater, ultrasonic and motor currents <strong>weekly</strong>.</div>
       </section>
       <div class="section-rule"></div>
 
@@ -516,14 +544,44 @@ figure.screen img{width:auto;max-width:100%;max-height:340px;margin:0 auto;backg
       <section id="s6">
         <div class="kicker"><span class="num">4</span> Maintenance / Service / Warranty / Warning</div>
         <h2>Maintenance &amp; Servicing</h2>
-        <h3>6.0 Maintenance</h3>
-        <p>The ultrasonic cleaner must always be kept clean and dry. Approximately every six months, the cleaner should be inspected and any accumulated dust removed with dry compressed air. Always ensure the generator cooling is guaranteed: the cooling slots must remain free so air can circulate, and warm air must not be allowed to accumulate.</p>
-        <div class="note warn"><span class="t">Before maintenance</span>Disconnect the mains plug first. Prevent chemical liquids from contacting the control elements. Avoid scratches in the radiating surface — these increase erosion due to cavitation.</div>
-        <h3>6.1 Service</h3>
-        <p>If the unit no longer functions correctly, check the plug and operating elements. Do not open the housing. Repairs may only be carried out by suitably trained staff — inexpert intervention can result in considerable danger to users and to the equipment.</p>
-        <h3>6.2 Warranty</h3>
-        <p>A one-year warranty is supplied by the manufacturer from the date of purchase, provided the equipment is operated in accordance with these operating instructions.</p>
-        <h3>6.3 Warning</h3>
+        <p>Keeping the MK-390 clean, correctly filled and properly serviced is essential for consistent cleaning performance, long equipment life and safe operation. The schedule below sets out the routine tasks; the notes that follow give more detail on the bath, filters, ultrasonics and electrical system. Carry out all work with the machine isolated unless a live check is specifically required.</p>
+
+        <div class="note danger"><span class="t">Before any maintenance</span>Switch off and lock out the mains isolator before opening panels or working on the machine. Dangerous voltages can remain on the ultrasonic generators and capacitors after power-off — allow time to discharge and treat the equipment as live until proven dead. Never allow chemical solution to contact the electrical or control components.</div>
+
+        <h3>Routine Maintenance Schedule</h3>
+        <table class="spectable sub">
+          <caption>Routine maintenance tasks &amp; intervals</caption>
+          <thead><tr><th>Interval</th><th>Task</th></tr></thead>
+          <tbody>
+            <tr><td>Each shift / daily</td><td>Check the bath level and top up; check solution concentration and temperature; read the filter pressure gauge; check visually for leaks and that the lid closes correctly.</td></tr>
+            <tr><td>Weekly</td><td>Skim or draw off floating oil from the weir tank; check the heater, ultrasonic and pump-motor currents; confirm even cavitation across the tank.</td></tr>
+            <tr><td>Monthly</td><td>Inspect and replace the cartridge filters as required; check the level switches and lid-close sensor; inspect cables, plugs and the gas-spring lid support.</td></tr>
+            <tr><td>Every 6 months</td><td>Blow dust from the ultrasonic generator cooling vents with dry compressed air; check terminal tightness and earth continuity; descale the heaters and tank if scale is present; carry out an ultrasonic performance (foil) test.</td></tr>
+            <tr><td>As required</td><td>Change the cleaning solution when it is spent; drain and clean out the process and weir tanks.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Bath &amp; Solution</h3>
+        <p>Maintain the detergent concentration at 10–15% and the temperature at the set point. Skim floating oil from the weir regularly — a heavy oil load blankets the surface and reduces cavitation. Change the solution when cleaning performance falls off despite correct concentration and temperature, or when the bath is heavily loaded with fine sludge: drain it through the drain valve, clean any settled debris from the tank and weir, then refill, re-dose and degas as described in Section&nbsp;2.</p>
+
+        <h3>Cartridge Filters</h3>
+        <p>The dual cartridge filters (125&nbsp;micron coarse and 50&nbsp;micron fine, 10″ long) are consumable items. Replace them when the filter-housing pressure climbs into the gauge's upper (red) zone, or when bath clarity and flow fall away — clogged cartridges starve the circulation pump and let particulate recirculate onto parts. Isolate the pump, relieve the pressure and drain the housing before opening it, fit fresh cartridges, and check the seals on reassembly.</p>
+
+        <h3>Ultrasonic Performance</h3>
+        <p>Confirm that cavitation is strong and even across the tank — a steady fine hiss with no dead spots. Performance can be checked objectively with the <strong>aluminium-foil test</strong>: suspend a sheet of thin foil in the bath for a short, fixed time; even, repeatable perforation and dimpling indicates healthy cavitation. Monitor each generator's current and frequency on the HMI and investigate any reading abnormally. Keep the resonator and tank radiating surfaces free of scratches and hard scale — both increase erosion and reduce output.</p>
+
+        <h3>Heaters, Pump &amp; Sensors</h3>
+        <p>Inspect the cartridge heaters periodically and descale them if hard scale builds up — scale insulates the element, slows heat-up and shortens element life (softened or de-mineralised water greatly reduces this). Check the filtration pump for leaks, noise and correct flow, and keep the level switches and temperature sensor clean so they read reliably.</p>
+
+        <h3>Ultrasonic Generators</h3>
+        <p>The generators are air-cooled. Keep the cooling vents clear and, at six-monthly intervals, blow accumulated dust out with dry compressed air (machine isolated and cool). Make sure warm air can escape and is not allowed to build up around the unit. Do not open a generator housing — there are no operator-serviceable parts inside.</p>
+
+        <h3>Service</h3>
+        <p>If the machine no longer operates correctly, first check the supply, isolator, plugs and operating controls, and review any message shown on the HMI. Do not open sealed housings. Repairs may only be carried out by suitably trained personnel — inexpert intervention can endanger both the user and the equipment. For spare parts, refer to the <strong>Recommended Spares List</strong> and the drawings in Section&nbsp;7.</p>
+
+        <h3>Warranty</h3>
+        <p>A twelve-month warranty applies from the date of purchase, provided the equipment is operated and maintained in accordance with these instructions. The warranty excludes consumables and damage caused by abrasion, wear, scale or improper handling — for example, pitting caused by acidic or halogenated additives, which must not be used.</p>
+
         <div class="note danger"><span class="t">Shock hazard</span>To avoid shock hazard when troubleshooting the system, always disconnect the power-supply line cord from the receptacle and disconnect the power-supply cable going to the control panel. Under certain conditions dangerous potentials may exist when the equipment is off, due to charge retained by capacitors. Always discharge capacitors to ground before troubleshooting or servicing.</div>
       </section>
       <div class="section-rule"></div>
