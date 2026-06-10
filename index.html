@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK-390 — Ultrasonic Cleaning System | Operating &amp; Service Manual · Kleentek Australia</title>
-<meta name="description" content="Operating Instructions and Service Manual for the MK-390 single-chamber ultrasonic cleaning system and its ACG cleaning generators. Supplied and supported by Kleentek Australia.">
+<meta name="description" content="Operating Instructions and Service Manual for the MK-390 single-chamber ultrasonic cleaning system. Supplied and supported by Kleentek Australia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Spline+Sans:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -258,18 +258,7 @@ footer a{color:#7fb0e6}
   <a href="#s5">3 · System Operation</a>
   <a href="#s6">4 · Maintenance &amp; Warranty</a>
   <a href="#s7">5 · HMI Overview</a>
-  <a href="#s8">6 · PLC I/O List</a>
-  <a href="#s9">7 · Electrical Drawing</a>
-  <a href="#s10">8 · Mechanical Drawing</a>
-  <a href="#s11">9 · Recommended Spares</a>
-  <a href="#s12">10 · Test Certificate</a>
-  <a href="#g1">G1 · Generator — Intro &amp; Safety</a>
-  <a href="#g2">G2 · Product Description</a>
-  <a href="#g3">G3 · Generator &amp; Resonators</a>
-  <a href="#g4">G4 · Operating the Generator</a>
-  <a href="#g5">G5 · Serial / Modbus</a>
-  <a href="#g6">G6 · Troubleshooting</a>
-  <a href="#g7">G7 · Wiring &amp; Disposal</a>
+  <a href="#s12">6 · Test Certificate</a>
 </nav>
 
 <div class="shell">
@@ -287,21 +276,7 @@ footer a{color:#7fb0e6}
       <li><a href="#s5">3 · System Operation (MMI)</a></li>
       <li><a href="#s6">4 · Maintenance &amp; Warranty</a></li>
       <li><a href="#s7">5 · HMI Overview</a></li>
-      <li><a href="#s8">6 · PLC Input / Output List</a></li>
-      <li><a href="#s9">7 · Electrical Drawing</a></li>
-      <li><a href="#s10">8 · Mechanical Drawing</a></li>
-      <li><a href="#s11">9 · Recommended Spares</a></li>
-      <li><a href="#s12">10 · Test Certificate</a></li>
-    </ol>
-    <div class="group">ACG — Cleaning Generator Manual</div>
-    <ol style="counter-reset:none">
-      <li><a href="#g1">G1 · Introduction &amp; Safety</a></li>
-      <li><a href="#g2">G2 · Product Description</a></li>
-      <li><a href="#g3">G3 · Generator &amp; Resonators</a></li>
-      <li><a href="#g4">G4 · Operating the Generator</a></li>
-      <li><a href="#g5">G5 · Serial Comms / Modbus</a></li>
-      <li><a href="#g6">G6 · Troubleshooting</a></li>
-      <li><a href="#g7">G7 · Wiring &amp; Disposal</a></li>
+      <li><a href="#s12">6 · Test Certificate</a></li>
     </ol>
   </aside>
 
@@ -330,13 +305,13 @@ footer a{color:#7fb0e6}
       <section id="top" style="padding-top:40px">
         <div class="kicker"><span class="num">★</span> How to use this manual</div>
         <h2>Read this before operating the machine</h2>
-        <p>This manual covers the principles, operation, control software and servicing of your Kleentek&nbsp;Australia MK-390 single-chamber ultrasonic cleaning system. It is in two parts: the <strong>system manual</strong> (Sections&nbsp;1–10) covers the machine itself, and the <strong>generator manual</strong> (Sections&nbsp;G1–G7) covers the ACG ultrasonic cleaning generators fitted to it.</p>
-        <p>The instructions should be carefully studied by machine operators and service mechanics before the machine is operated. Operators should be familiar with Sections&nbsp;2–4 before running a cycle; service staff should also read Sections&nbsp;4–10 and the generator manual. Keep this manual with the machine.</p>
+        <p>This manual covers the operation, control software and servicing of your Kleentek&nbsp;Australia MK-390 single-chamber ultrasonic cleaning system (Sections&nbsp;1–6).</p>
+        <p>The instructions should be carefully studied by machine operators and service mechanics before the machine is operated. Operators should be familiar with Sections&nbsp;2–4 before running a cycle; service staff should also read Sections&nbsp;4–6. Keep this manual with the machine.</p>
         <div class="toc-grid">
           <a class="toc-card" href="#s4"><span class="tc-n">SECTION 2</span><div class="tc-t">Getting Ready</div><div class="tc-d">Liquid level, temperature and electrical connection before first use.</div></a>
           <a class="toc-card" href="#s5"><span class="tc-n">SECTION 3</span><div class="tc-t">Running the Machine</div><div class="tc-d">The IDEC touch-panel screens and how to start a cleaning program.</div></a>
           <a class="toc-card" href="#s6"><span class="tc-n">SECTION 4</span><div class="tc-t">Looking After It</div><div class="tc-d">Routine maintenance, service and safety warnings.</div></a>
-          <a class="toc-card" href="#g6"><span class="tc-n">SECTION G6</span><div class="tc-t">If Something Goes Wrong</div><div class="tc-d">Generator fault and warning list with causes and solutions.</div></a>
+          <a class="toc-card" href="#s12"><span class="tc-n">SECTION 6</span><div class="tc-t">Factory Test Results</div><div class="tc-d">The machine’s as-built test certificate — currents, temperatures and checks.</div></a>
         </div>
         <div class="note info"><span class="t">Proprietary notice</span>The contents of this manual are proprietary information. No part may be transmitted, written or verbal, to any third party, or copied in any way, without the prior written consent of Kleentek&nbsp;Australia. All rights are reserved in respect of changes of design and technical data.</div>
       </section>
@@ -480,99 +455,9 @@ footer a{color:#7fb0e6}
       </section>
       <div class="section-rule"></div>
 
-      <!-- 8. IO LIST -->
-      <section id="s8">
-        <div class="kicker"><span class="num">6</span> PLC Input / Output List</div>
-        <h2>I/O list for the MK-390</h2>
-        <p>The controller is an IDEC PLC + HMI, model <strong>FT1A-C12RA</strong> (7&nbsp;DI / 1&nbsp;AI, 4&nbsp;DO), with 3 ultrasonic generators communicating over RS-485.</p>
-        <table class="alarms">
-          <thead><tr><th>#</th><th>Digital / analog input</th><th>Symbol</th><th>Module</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Start switch</td><td>SW1</td><td>I0</td></tr>
-            <tr><td>2</td><td>Stop switch</td><td>SW2</td><td>I1</td></tr>
-            <tr><td>3</td><td>Process tank level switch</td><td>LS1</td><td>I2</td></tr>
-            <tr><td>4</td><td>Weir tank level switch</td><td>LS2</td><td>I3</td></tr>
-            <tr><td>5</td><td>Thermostat input (provision)</td><td>TH1</td><td>I4</td></tr>
-            <tr><td>6</td><td>Lid-close sensor</td><td>S1</td><td>I5</td></tr>
-            <tr><td>7</td><td>Temperature input (AI, V-type via converter)</td><td>RTD1</td><td>I6</td></tr>
-            <tr><td>8</td><td>Reserve</td><td>SW3</td><td>I7</td></tr>
-          </tbody>
-        </table>
-        <table class="alarms">
-          <thead><tr><th>#</th><th>Digital output</th><th>Symbol</th><th>Module</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Pump</td><td>M1</td><td>Q0</td></tr>
-            <tr><td>2</td><td>Heater</td><td>H1</td><td>Q1</td></tr>
-            <tr><td>3</td><td>Stop LED</td><td>L1</td><td>Q2</td></tr>
-            <tr><td>4</td><td>Run LED</td><td>L2</td><td>Q3</td></tr>
-          </tbody>
-        </table>
-      </section>
-      <div class="section-rule"></div>
-
-      <!-- 9. ELECTRICAL DRAWING -->
-      <section id="s9">
-        <div class="kicker"><span class="num">7</span> Electrical Drawing</div>
-        <h2>Electrical schematic</h2>
-        <p>Connection diagram <strong>4-10-B0909</strong> for the MK-390. Mains supply is 63&nbsp;A; a surge suppressor is to be connected with all contactors.</p>
-        <figure><img src="assets/electrical-drawing.png" alt="Electrical schematic for the MK-390"><figcaption><b>Dwg 4-10-B0909</b> Power, PLC I/O and ultrasonic generator wiring. Click to enlarge in your browser.</figcaption></figure>
-      </section>
-      <div class="section-rule"></div>
-
-      <!-- 10. MECHANICAL DRAWING -->
-      <section id="s10">
-        <div class="kicker"><span class="num">8</span> Mechanical Drawing</div>
-        <h2>General arrangement</h2>
-        <p>General-arrangement drawing for the MK-390. Key technical data is summarised below; minor or non-effective modifications may be made at the time of final production.</p>
-        <figure><img src="assets/mechanical-drawing.png" alt="General arrangement drawing of the MK-390"><figcaption><b>GA drawing 3-10-21768</b> Process tank, structure, filtration and ultrasonic layout.</figcaption></figure>
-        <table class="spectable sub">
-          <caption>GA technical data</caption>
-          <tbody>
-            <tr><td>Overall machine size</td><td>1650 × 1200 × 1162&nbsp;mm</td></tr>
-            <tr><td>Loading / operating height</td><td>1162&nbsp;mm / 988&nbsp;mm</td></tr>
-            <tr><td>Process tank size</td><td>800 × 700 × 780&nbsp;mm (overflow at 600&nbsp;mm), 300&nbsp;L at overflow</td></tr>
-            <tr><td>Basket size</td><td>710 × 600 × 438&nbsp;mm (SS304, 2&nbsp;mm thick)</td></tr>
-            <tr><td>Ultrasonics</td><td>3 × generators, 25&nbsp;kHz, 4500&nbsp;W</td></tr>
-            <tr><td>Heaters</td><td>2 × 4&nbsp;kW tubular type</td></tr>
-            <tr><td>Weir tank</td><td>700 × 200 × 700&nbsp;mm, 100&nbsp;L</td></tr>
-            <tr><td>Filtration</td><td>Dual cartridge, 50 &amp; 125 micron</td></tr>
-            <tr><td>Structure / covers</td><td>SS304, 10&nbsp;mm nitrile-foam insulation</td></tr>
-          </tbody>
-        </table>
-      </section>
-      <div class="section-rule"></div>
-
-      <!-- 11. SPARES -->
-      <section id="s11">
-        <div class="kicker"><span class="num">9</span> Recommended Spares List</div>
-        <h2>Recommended spares</h2>
-        <p>Model: <strong>MK-390</strong>. Lead times are indicative; contact Kleentek&nbsp;Australia to order.</p>
-        <table class="alarms">
-          <thead><tr><th>#</th><th>Part</th><th>Code</th><th>Description</th><th>Lead time</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Filtration pump</td><td>445 021 101</td><td>0.84&nbsp;kW, 5&nbsp;m³/h, 14.7&nbsp;m head — Grundfos CM5-2-A-R-A-V AVBV</td><td>6 weeks</td></tr>
-            <tr><td>2</td><td>Filter <span style="color:var(--steel)">(consumable)</span></td><td>745 170 050</td><td>Cartridge filter, 10″ long, 125 micron</td><td>4 weeks</td></tr>
-            <tr><td>3</td><td>Filter <span style="color:var(--steel)">(consumable)</span></td><td>745 170 040</td><td>Cartridge filter, 10″ long, 50 micron</td><td>4 weeks</td></tr>
-            <tr><td>4</td><td>Filter housing</td><td>700 396 611</td><td>DOE-type cartridge filter housing, 1″ BS-10 Table&nbsp;E</td><td>4 weeks</td></tr>
-            <tr><td>5</td><td>Pressure gauge</td><td>745 295 040</td><td>1/4″ BSPM, 0–2&nbsp;bar, red/green zone, glycerine filled</td><td>4 weeks</td></tr>
-            <tr><td>6</td><td>Lid accessory</td><td>690 818 200</td><td>Gas spring — ACE GS-155-100-CC</td><td>6 weeks</td></tr>
-            <tr><td>7</td><td>Castor wheel</td><td>690 816 096</td><td>2.5″ nylon castor, adjustable swivel, heavy duty (500&nbsp;kg) — Ideal WO18-80 F/S</td><td>6 weeks</td></tr>
-            <tr><td>8</td><td>Power supply</td><td>419 024 062</td><td>24&nbsp;V&nbsp;DC, 6.2&nbsp;A — Siemens 6EP1333-1LD00</td><td>6 weeks</td></tr>
-            <tr><td>9</td><td>Resonator</td><td>901 751 255</td><td>Ultrasonic tube resonator URT-25-48-5 (669&nbsp;mm)</td><td>6 weeks</td></tr>
-            <tr><td>10</td><td>Generator</td><td>901 500 225</td><td>ACG 25XXR</td><td>6 weeks</td></tr>
-            <tr><td>11</td><td>Level switch</td><td>300 661 010</td><td>Liquid level switch FTL31-AA4U3BAWSJ — Endress+Hauser</td><td>6 weeks</td></tr>
-            <tr><td>12</td><td>Heater</td><td>450 343 245</td><td>Heater coil, 4&nbsp;kW, 600&nbsp;mm, 3-phase, Ø45&nbsp;mm — Jeka</td><td>4–6 weeks</td></tr>
-            <tr><td>13</td><td>Heater casing</td><td>450 343 502</td><td>SS304 heater casing, 600&nbsp;mm (Dwg 4-10-13164)</td><td>4 weeks</td></tr>
-            <tr><td>14</td><td>Temperature sensor</td><td>335 575 000</td><td>RTD PT100, 100&nbsp;mm below flange, 3&nbsp;m — Radix</td><td>6 weeks</td></tr>
-            <tr><td>15</td><td>Lid-close sensor</td><td>300 951 210</td><td>Magnetic switch — Banner SI-MAGB2SM (+ magnet SI-MAGB2MM)</td><td>6 weeks</td></tr>
-          </tbody>
-        </table>
-      </section>
-      <div class="section-rule"></div>
-
       <!-- 12. TEST CERTIFICATE -->
       <section id="s12">
-        <div class="kicker"><span class="num">10</span> Test Certificate</div>
+        <div class="kicker"><span class="num">6</span> Test Certificate</div>
         <h2>Machine test report</h2>
         <p>Single-chamber ultrasonic cleaning system · Serial No. <strong>S23CP0001-0001</strong> · Connection diagram <strong>4-10-B0909</strong> · Machine size 1650 × 1200 × 1180&nbsp;mm.</p>
         <table class="spectable sub">
@@ -626,226 +511,6 @@ footer a{color:#7fb0e6}
         </table>
         <p style="font-size:13px;color:var(--steel)">Continuous running test: 25 cycles over one working day. Factory test passed.</p>
       </section>
-      <div class="section-rule"></div>
-
-      <!-- ============================================================ -->
-      <!-- PART B — ACG GENERATOR MANUAL                                 -->
-      <!-- ============================================================ -->
-
-      <section id="g1" style="padding-top:60px">
-        <div class="kicker"><span class="num">G</span> Advance Cleaning Generator (ACG)</div>
-        <h2>Generator manual — introduction &amp; safety</h2>
-        <p>This part of the manual covers the <strong>Advance Cleaning Generator (ACG)</strong> ultrasonic generators fitted to the cleaning system. The exact designation depends on the frequency and power of the generator and reads <em>ACG20/25/30/40xx</em>; an appended “R” indicates the generator is supplied with an RS-25-XX tube resonator.</p>
-        <h3>G1.1 Proper intended use</h3>
-        <p>The ACG ultrasonic system is intended solely for ultrasonic cavitation of processing liquids. The manufacturer is not responsible for damage resulting from unauthorised use or misuse — the user bears the risk. Observance of these operating instructions and of the inspection and maintenance conditions is part of proper intended use.</p>
-        <h3>G1.2 Symbols used</h3>
-        <div class="note warn"><span class="t">Caution</span>Indicates a risk of injury to people or of damage to unit components.</div>
-        <div class="note info"><span class="t">Note</span>Special information or operating instructions.</div>
-
-        <h3>G2.1 General safety</h3>
-        <p>The construction of the ACG corresponds to the current state of technology and is operationally safe. The equipment should always be used in a trouble-free state, in full awareness of safety considerations, in accordance with these instructions and for its intended purpose. Only genuine parts supplied by the manufacturer may be fitted.</p>
-        <ul>
-          <li><strong>Operating personnel</strong> — operation may only be carried out by authorised, trained or instructed personnel. Work on the electrical equipment may only be done by a qualified electrician, or by an instructed person under a qualified electrician's supervision.</li>
-          <li><strong>Electrical</strong> — only operate the unit at the voltage with neutral shown on the nameplate, with a ground wire. Only carry out work on the components when the mains cable is unplugged. Use only voltage-insulated tools. Touch the mains plug only with dry hands; if a plug has contacted liquid, clean and dry it (e.g. with compressed air) before use.</li>
-          <li><strong>Ventilation</strong> — keep the ventilation openings unobstructed and ensure adequate air circulation to avoid internal heat build-up. Protect the generator and keypad from moisture and corrosive dust.</li>
-          <li><strong>Never run dry</strong> — the ultrasonic system must never be operated without liquid. To avoid overheating, the tube resonator or immersion transducer must never be run dry, and fluid must not be allowed to penetrate the transducer head or housing.</li>
-          <li><strong>Chemicals</strong> — do not use acidic additives. Halogen concentrations of chlorine, fluorine, bromine or iodine ions may cause pitting and should be avoided.</li>
-          <li><strong>Hot surfaces</strong> — tube resonators and transducers in use should never be touched; vibration friction can produce very high temperatures that can burn.</li>
-          <li><strong>Cooling</strong> — without total immersion, tube resonators must not be operated without cooling. If the bath temperature is constantly above 80&nbsp;°C, cooling must remain active even during non-operating times.</li>
-        </ul>
-        <div class="note danger"><span class="t">Do not operate if…</span>the unit has suffered abnormal mechanical effects (e.g. a fall), a fault is shown on the front panel, the mains cable is damaged, or the bath / resonator / transducer is obviously leaking. In such cases the unit must be inspected and repaired by an authorised service centre.</div>
-
-        <h3>G2.6 Emergency action</h3>
-        <table class="alarms">
-          <thead><tr><th>Incident</th><th>Action</th></tr></thead>
-          <tbody>
-            <tr><td>Electric shock</td><td>Switch off at the ON/OFF switch. Unplug from mains. Call for medical assistance and perform first aid.</td></tr>
-            <tr><td>Smoke, unusual noise or temperature rise</td><td>Switch off at the ON/OFF switch. Unplug from mains.</td></tr>
-            <tr><td>Fire in electrical systems</td><td>Extinguish with an appropriate fire extinguisher. Raise the alarm with the plant or municipal fire service.</td></tr>
-          </tbody>
-        </table>
-        <div class="note warn"><span class="t">Noise emissions</span>Ultrasonic vibrations may sometimes generate excessive sound levels. Operators and people nearby must wear ear protection if the noise exceeds the levels permitted by health-and-safety legislation.</div>
-
-        <h3>G3 Transport &amp; positioning</h3>
-        <p>Before commissioning, check that the components listed on the delivery note are complete and undamaged. The delivery company is responsible for transit damage — a detailed report (with a photo if possible) forms the basis of any claim. Position the generator away from heat sources, direct sunlight, heavy dust and mechanical vibration. Ambient: relative humidity 20–80%, operating temperature 10–55&nbsp;°C. Allow approximately 0.5&nbsp;m × 0.2&nbsp;m of workspace.</p>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g2">
-        <div class="kicker"><span class="num">G2</span> Product Description</div>
-        <h2>What the generator does</h2>
-        <p>The ACG supplies directly-attached baths, immersion transducers or tube resonators. It is built as an insert module and can provide a continuous ultrasonic output of <strong>1000 / 1500 / 2000&nbsp;VA</strong>.</p>
-        <figure><img src="assets/acg-principle.png" alt="Circuit principle of an ultrasonic cleaning unit"><figcaption><b>Principle</b> Mains frequency → generator → high frequency → transducer → sound waves in the liquid.</figcaption></figure>
-        <h3>Operating method</h3>
-        <p>The generator (2) converts the mains frequency (1) from 50&nbsp;Hz to a high frequency (3) — depending on the application, 20–40&nbsp;kHz. The electro-acoustic transducer (4) converts the electrical oscillations into mechanical oscillations of the same frequency. These sound waves (5) propagate in the liquid (6) via the sound box (7). Cavitation bubbles form if the intensity is sufficient; their creation and subsequent implosion form the desired “micro-brushes”. The four most important variables are <strong>cavitation, chemistry/processing fluid, temperature and sonication time</strong>.</p>
-        <h3>Advantages of ultrasonic technology</h3>
-        <ul>
-          <li>Short process times — from a few seconds to several minutes</li>
-          <li>Higher productivity, better quality and maximum yield</li>
-          <li>Savings on power, utilities and operating cost</li>
-          <li>Simple, automated operation with reproducible results</li>
-          <li>Lower chemical concentration than conventional cleaning</li>
-          <li>Custom-made online or batch equipment available; quick pay-back period</li>
-        </ul>
-        <div class="note info"><span class="t">Beyond cleaning</span>The same cavitation effect is used industrially for emulsification, crystallisation, dispersion, particle-size reduction, extraction / cell disruption, mixing &amp; homogenisation, degassing, atomisation, filtration and the acceleration of chemical reactions across the chemical, pharmaceutical, biotechnology and food-processing industries.</div>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g3">
-        <div class="kicker"><span class="num">G3</span> Generator &amp; Resonators</div>
-        <h2>Design &amp; connections</h2>
-        <p>The ACG is available in three front-panel versions — <strong>TFT</strong> (4.3″ colour touch screen), <strong>LED</strong> and <strong>Blind</strong> — all sharing the same generator body and connections.</p>
-        <div class="inline-2">
-          <figure><img src="assets/generator-rear.png" alt="Generator connection side"><figcaption><b>Rear panel</b> 1 Mains 230&nbsp;V · 2 Fine-wire fuse 10&nbsp;A · 3 Ventilator · 4 25-pin Sub-D · 5 HF connector.</figcaption></figure>
-          <figure><img src="assets/generator-mounting.png" alt="Generator DIN-rail mounting"><figcaption><b>Mounting</b> 1 DIN rail · 2 Mounting strap · 3 Mains 230&nbsp;V · 4 HF connector.</figcaption></figure>
-        </div>
-        <h3>Tube resonator</h3>
-        <div class="inline-2">
-          <figure><img src="assets/resonator.png" alt="Tube resonator with cable"><figcaption><b>Resonator</b> 1 HF plug · 2 Waterproof cable connection · 3 Resonator head · 4 Tuned tube.</figcaption></figure>
-          <figure><img src="assets/resonator-detail.png" alt="Tube resonator detail"><figcaption><b>Detail</b> The HF plug and resonator head at the cable end of the tuned tube.</figcaption></figure>
-        </div>
-        <figure><img src="assets/immersible-transducer.png" alt="Immersible transducer"><figcaption><b>Immersible transducer</b> 1 HF plug · 2 Waterproof cable connection · 3 Handles (optional) · 4 Radiation surface.</figcaption></figure>
-        <div class="note warn"><span class="t">Installing resonators</span>Tube resonators may be installed horizontally or vertically; in both cases ensure fluid cannot get inside the transducer head. When not fully immersed, the resonator head must be cooled. Except at the mounting point, resonators must not touch any other part of the system. Always switch the generator off before inserting or removing the HF cable.</div>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g4">
-        <div class="kicker"><span class="num">G4</span> Operating the Generator</div>
-        <h2>The TFT touch screen</h2>
-        <p>The ACG uses a microprocessor-controlled constant-output regulator. The system always operates at the optimum working frequency and keeps the set power output constant under varying bath conditions; it is protected against short-circuits and overloads. On power-up the splash screen shows for 2&nbsp;seconds, then the home screen appears.</p>
-        <div class="inline-2">
-          <figure class="screen"><img src="assets/acg-home.png" alt="ACG home screen"><figcaption><b>Home</b> POWER (%), ON/OFF, live power readout, screen-rotation and Warning&amp;Fault buttons.</figcaption></figure>
-          <figure class="screen"><img src="assets/acg-graph.png" alt="ACG graphical presentation screen"><figcaption><b>Graph</b> Live power (0–100%) and frequency (±2&nbsp;kHz), updated every 10&nbsp;s, with radial progress bars.</figcaption></figure>
-        </div>
-        <div class="inline-2">
-          <figure class="screen"><img src="assets/acg-sweep.png" alt="ACG sweep settings screen"><figcaption><b>Sweep</b> Mode (random / triangular / saw-tooth), update rate, frequency band and power band.</figcaption></figure>
-          <figure class="screen"><img src="assets/acg-boost-degas.png" alt="ACG boost and degas settings"><figcaption><b>Boost / Degas</b> Boost interval &amp; power and degas on/off times.</figcaption></figure>
-        </div>
-        <div class="inline-2">
-          <figure class="screen"><img src="assets/acg-datetime.png" alt="ACG date and time settings"><figcaption><b>Date &amp; time</b> Set the generator clock (also used by the RTC channels).</figcaption></figure>
-          <figure class="screen"><img src="assets/acg-actual-params.png" alt="ACG actual parameter screen"><figcaption><b>Actual values</b> Target power, temperature, operating hours, voltage, current, amplitude and power.</figcaption></figure>
-        </div>
-        <h3>Key parameters</h3>
-        <ul>
-          <li><strong>UX ON time</strong> — sets how long the ultrasonics stay on; max 65535. With <strong>pulse on/off</strong> times set, the output cycles on and off for the set seconds while UX ON time is non-zero.</li>
-          <li><strong>Sweep mode</strong> — varies the frequency about the working frequency in a random, triangular or saw-tooth pattern, within the selected frequency band and power band.</li>
-          <li><strong>Boost mode</strong> — every boost interval, the power is increased by the boost percentage for the boost time. Disabled at 100% power; lower priority than pulse on/off, higher than degas.</li>
-          <li><strong>Degas mode</strong> — varies the output on a 100&nbsp;ms time base (max 65535) to drive off dissolved gas. Requires UX ON time = 0.</li>
-          <li><strong>RTC</strong> — six channels can switch the ultrasonics on at a set time of day.</li>
-        </ul>
-        <h3>LED &amp; Blind versions</h3>
-        <p>On the tabletop LED model, the ultrasonics are switched directly with the front-panel ON/OFF button; output power is adjusted with the SET button across four levels from 60–100%, read from the green LED. On other models, on/off switching is via the built-in 25-pin interface. The Blind version is operated the same way as the common methods below.</p>
-        <h3>Common operation — output power via the DB-25</h3>
-        <p>Using the rear 25-pin Sub-D, three amplitude inputs (AMPL0–2) select the output power. Give a high signal (+24&nbsp;V&nbsp;DC) on pin&nbsp;1 to switch the ultrasonics on.</p>
-        <table class="spectable sub">
-          <caption>Output power selection (AMPL0 / AMPL1 / AMPL2)</caption>
-          <thead><tr><th>AMPL0</th><th>AMPL1</th><th>AMPL2</th><th>Output power</th></tr></thead>
-          <tbody>
-            <tr><td>0</td><td>0</td><td>0</td><td>100%</td></tr>
-            <tr><td>1</td><td>0</td><td>0</td><td>90%</td></tr>
-            <tr><td>0</td><td>1</td><td>0</td><td>75%</td></tr>
-            <tr><td>1</td><td>1</td><td>0</td><td>65%</td></tr>
-            <tr><td>0</td><td>0</td><td>1</td><td>50%</td></tr>
-            <tr><td>1</td><td>0</td><td>1</td><td>45%</td></tr>
-            <tr><td>0</td><td>1</td><td>1</td><td>40%</td></tr>
-            <tr><td>1</td><td>1</td><td>1</td><td>30%</td></tr>
-          </tbody>
-        </table>
-        <div class="note info"><span class="t">Note</span>For the first 15 seconds after power-on, the generator cannot be operated. Degas via the DB-25 has a fixed 15&nbsp;s on / 15&nbsp;s off time.</div>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g5">
-        <div class="kicker"><span class="num">G5</span> Serial Communication / Modbus</div>
-        <h2>Modbus RTU interface</h2>
-        <p>The generator supports Modbus RTU over RS-485 (use 2-wire shielded cable on the front 3-pin connector). Default serial parameters: <strong>baud 57600, 8 data bits, no parity, 1 stop bit</strong>. Supported functions: 01 read coils, 03 read holding registers, 05 write single coil, 06 write single register.</p>
-        <h3>Read-only registers (function 03)</h3>
-        <table class="alarms">
-          <thead><tr><th>Address</th><th>Variable</th><th>Description</th></tr></thead>
-          <tbody>
-            <tr><td>40001</td><td>Us_frequency</td><td>Actual frequency (Hz)</td></tr>
-            <tr><td>40002</td><td>sIout</td><td>Actual current (mA)</td></tr>
-            <tr><td>40003</td><td>ACT_Power</td><td>Actual power (W)</td></tr>
-            <tr><td>40004</td><td>sUout</td><td>Actual voltage (V)</td></tr>
-            <tr><td>40007</td><td>App_power</td><td>Apparent power = (sUout × sIout) / 1000</td></tr>
-            <tr><td>40008</td><td>Temperature</td><td>Actual generator temperature</td></tr>
-            <tr><td>40011</td><td>Target_power</td><td>Power set point (W)</td></tr>
-            <tr><td>40012</td><td>Cos phi</td><td>Power factor</td></tr>
-            <tr><td>40013</td><td>Error No</td><td>Active error number</td></tr>
-          </tbody>
-        </table>
-        <h3>Read / write registers (functions 03 / 06)</h3>
-        <table class="alarms">
-          <thead><tr><th>Address</th><th>Variable</th><th>Notes</th></tr></thead>
-          <tbody>
-            <tr><td>40021</td><td>Bit-set register</td><td>Select parameters via bit positions (see bit-set list)</td></tr>
-            <tr><td>40022</td><td>Degas on/off</td><td>1 = degas on, 2 = degas off</td></tr>
-            <tr><td>40024</td><td>Modbus ID</td><td>Device ID, 1–31</td></tr>
-            <tr><td>40025</td><td>User power (%)</td><td>1–100</td></tr>
-            <tr><td>40026–40028</td><td>Boost interval / time / power</td><td>0–999 s · 0–999 s · 10–100%</td></tr>
-            <tr><td>40029–40040</td><td>RTC ch 1–6 hour / minute</td><td>Hour 1–12, minute 0–59</td></tr>
-            <tr><td>40041</td><td>Sweep mode</td><td>0 off · 1 random · 2 triangular · 3 saw-tooth</td></tr>
-            <tr><td>40042</td><td>Update rate</td><td>1=5&nbsp;ms · 2=10&nbsp;ms · 3=100&nbsp;ms · 4=1&nbsp;s · 5=10&nbsp;s</td></tr>
-            <tr><td>40043</td><td>Frequency band</td><td>1=0.1&nbsp;kHz … 9=2.0&nbsp;kHz</td></tr>
-            <tr><td>40044</td><td>Power band (%)</td><td>5–100 (sweep)</td></tr>
-            <tr><td>40045–40047</td><td>UX on / pulse on / pulse off</td><td>0–65535 (UX on &amp; pulse off), 1–65535 (pulse on)</td></tr>
-            <tr><td>40048</td><td>Baud rate</td><td>1=9600 … 5=115200</td></tr>
-            <tr><td>40049–40050</td><td>Degas UX on / off (×100&nbsp;ms)</td><td>1–65535</td></tr>
-            <tr><td>40051–40056</td><td>Month / date / year / hour / minute / second</td><td>Set the clock (hour in 24-h format)</td></tr>
-            <tr><td>40057</td><td>Master operator</td><td>0 all access · 1 TFT/LED only · 2 serial only · 3 DB-25 only</td></tr>
-            <tr><td>40059</td><td>Device off/on</td><td>Write 1 to toggle</td></tr>
-          </tbody>
-        </table>
-        <div class="note info"><span class="t">Coils (functions 01 / 05)</span>Coil&nbsp;1 = ultrasonic on/off (FF00 on, 0000 off), coil&nbsp;5 = boost on/off, coils&nbsp;6–11 = RTC ch&nbsp;1–6 on/off, coils&nbsp;12–14 = power-range select. Error responses: wrong CRC returns 0x2; an out-of-range address or wrong slave ID returns no response.</div>
-        <h3>Resetting serial communication</h3>
-        <p><strong>Via DB-25:</strong> connect pins 2 and 18 and, with the device on, connect/disconnect them more than 5 times. <strong>Via LED panel:</strong> press SET and ON/OFF together for 10&nbsp;seconds until LED&nbsp;4 turns off. After a successful reset the defaults are restored: baud 57600, 8 data bits, no parity, 1 stop bit, Modbus ID 1.</p>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g6">
-        <div class="kicker"><span class="num">G6</span> Troubleshooting</div>
-        <h2>Faults &amp; warnings</h2>
-        <p>The generator recognises the following statuses. For most power/current faults: check the resonator, switch the generator off and on, and check the setting parameters; if the problem persists it is likely a generator hardware fault.</p>
-        <table class="alarms">
-          <thead><tr><th>No.</th><th>Fault</th><th>Meaning &amp; solution</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Overload P, I</td><td>Generator drawing high power and current. Check resonator and settings; cycle power.</td></tr>
-            <tr><td>2</td><td>No load</td><td>Generator unable to take power. Check resonator and connections.</td></tr>
-            <tr><td>3</td><td>Overload I</td><td>Device drawing high current.</td></tr>
-            <tr><td>4 / 5</td><td>Iout / Pout off AD</td><td>Current / power ADC not reading correctly — hardware.</td></tr>
-            <tr><td>6</td><td>Temperature high</td><td>Generator temperature too high. Check the cooling fan; allow it to cool, then switch the ultrasonics on later.</td></tr>
-            <tr><td>7</td><td>IGBT fault</td><td>Hardware (HCPL-316J / IGBT) fault.</td></tr>
-            <tr><td>8 / 9</td><td>Iout / Uout max interrupt</td><td>At UX-on start, current / voltage went too high. Check resonator and settings.</td></tr>
-          </tbody>
-        </table>
-        <table class="alarms">
-          <thead><tr><th>No.</th><th>Warning</th><th>Meaning &amp; solution</th></tr></thead>
-          <tbody>
-            <tr><td>10 / 11</td><td>E freq start / stop</td><td>Start / stop frequency setting error — set the value in the setting parameters.</td></tr>
-            <tr><td>12</td><td>E freq pwm stop &lt; start</td><td>Stop frequency below start frequency — correct both.</td></tr>
-            <tr><td>13</td><td>E fdelta ≤ 0</td><td>Delta value zero or negative — check start/stop frequency.</td></tr>
-            <tr><td>14</td><td>E fmax ≤ fmin</td><td>Frequency too low — check start/stop and actual frequency.</td></tr>
-            <tr><td>15</td><td>Power n.r.</td><td>Power not reached — check resonator and settings; cycle power.</td></tr>
-            <tr><td>16</td><td>Temperature</td><td>Temperature high — check the fan; allow to cool.</td></tr>
-            <tr><td>17</td><td>USB not detected</td><td>Pen drive not working or file not created. Attach the pen drive at power-on; if needed create a <em>counter1.XLS</em> file on it.</td></tr>
-          </tbody>
-        </table>
-        <h3>Maintenance &amp; warranty</h3>
-        <p>Keep the generator clean and dry and ensure free ventilation — clean the air inlets/outlets every 6 months (disconnect from mains first). Keep operating elements away from liquids and avoid scratches on resonators and radiating surfaces. The manufacturer guarantees all components for 12 months from the date of purchase if operated as instructed; this excludes abrasion, wear and improper handling. Halogen-induced pitting is not covered by the warranty.</p>
-      </section>
-      <div class="section-rule"></div>
-
-      <section id="g7">
-        <div class="kicker"><span class="num">G7</span> Wiring &amp; Disposal</div>
-        <h2>Connector wiring</h2>
-        <div class="inline-2">
-          <figure><img src="assets/db25-wiring.png" alt="Back-side DB-25 pin connector wiring"><figcaption><b>DB-25</b> Inputs (US-ON, SWEEP, AMPL0–2), supply (24&nbsp;V int/ext, 0&nbsp;V) and outputs (BUSY, WARNING, FAULT).</figcaption></figure>
-          <figure><img src="assets/rs485-connector.png" alt="RS-485 connector pin-out"><figcaption><b>RS-485</b> 3-pin Combicon: 1 (B / D−) · 2 (A / D+) · 3 (GND). M12: 1 (B / D−) · 4 (A / D+) · 3 (GND).</figcaption></figure>
-        </div>
-        <div class="note warn"><span class="t">DB-25 warning</span>The internal 24&nbsp;V must not come into contact with any external potential. Use only for one generator module (maximum current load 50&nbsp;mA).</div>
-        <h3>Disposal &amp; recycling</h3>
-        <p>Generators that have reached the end of their life can be disposed of according to the local rules for disposal or recycling of electronic scrap. Your local authority can provide further information; for more detail, please contact your supplier.</p>
-      </section>
 
     </div><!-- /wrap -->
 
@@ -862,7 +527,7 @@ footer a{color:#7fb0e6}
         </div>
         <div class="addr">
           <b>About this manual</b><br>
-          Operating Instructions &amp; Service Manual for the MK-390 ultrasonic cleaning system and its ACG cleaning generators. Supplied and supported by Kleentek&nbsp;Australia.
+          Operating Instructions &amp; Service Manual for the MK-390 ultrasonic cleaning system. Supplied and supported by Kleentek&nbsp;Australia.
           <div class="small">All rights reserved in respect of changes of design and technical data. Specifications may be modified without notice.</div>
         </div>
       </div>
