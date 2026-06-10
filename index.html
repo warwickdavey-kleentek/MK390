@@ -244,6 +244,19 @@ footer a{color:#7fb0e6}
 #mnav{display:none;background:#052a52;padding:8px 0}
 #mnav a{display:block;color:#bcd2ec;padding:9px 22px;font-size:14px;border-bottom:1px solid rgba(255,255,255,.05)}
 #mnav.open{display:block}
+
+/* ---------- Download cards ---------- */
+.dl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0 0}
+.dl-card{display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--line);
+  border-radius:12px;padding:15px 17px;box-shadow:var(--shadow);transition:.18s}
+.dl-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-color:#bcd4ee}
+.dl-card .pdf{flex:none;width:44px;height:44px;border-radius:9px;background:var(--blue-deep);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-family:'Spline Sans Mono',monospace;
+  font-size:11px;font-weight:600;letter-spacing:.04em}
+.dl-card .dl-t{font-family:'Archivo';font-weight:700;color:var(--blue-deep);font-size:15.5px;line-height:1.2;display:block}
+.dl-card .dl-m{font-size:12.5px;color:var(--steel);margin-top:3px;display:block}
+.dl-card .arrow{margin-left:auto;flex:none;color:var(--blue);font-size:22px;font-weight:700;line-height:1}
+@media(max-width:680px){.dl-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -259,6 +272,7 @@ footer a{color:#7fb0e6}
   <a href="#s6">4 · Maintenance &amp; Warranty</a>
   <a href="#s7">5 · HMI Overview</a>
   <a href="#s12">6 · Test Certificate</a>
+  <a href="#s13">7 · Diagrams &amp; Drawings</a>
 </nav>
 
 <div class="shell">
@@ -277,6 +291,7 @@ footer a{color:#7fb0e6}
       <li><a href="#s6">4 · Maintenance &amp; Warranty</a></li>
       <li><a href="#s7">5 · HMI Overview</a></li>
       <li><a href="#s12">6 · Test Certificate</a></li>
+      <li><a href="#s13">7 · Diagrams &amp; Drawings</a></li>
     </ol>
   </aside>
 
@@ -305,7 +320,7 @@ footer a{color:#7fb0e6}
       <section id="top" style="padding-top:40px">
         <div class="kicker"><span class="num">★</span> How to use this manual</div>
         <h2>Read this before operating the machine</h2>
-        <p>This manual covers the operation, control software and servicing of your Kleentek&nbsp;Australia MK-390 single-chamber ultrasonic cleaning system (Sections&nbsp;1–6).</p>
+        <p>This manual covers the operation, control software and servicing of your Kleentek&nbsp;Australia MK-390 single-chamber ultrasonic cleaning system (Sections&nbsp;1–7).</p>
         <p>The instructions should be carefully studied by machine operators and service mechanics before the machine is operated. Operators should be familiar with Sections&nbsp;2–4 before running a cycle; service staff should also read Sections&nbsp;4–6. Keep this manual with the machine.</p>
         <div class="toc-grid">
           <a class="toc-card" href="#s4"><span class="tc-n">SECTION 2</span><div class="tc-t">Getting Ready</div><div class="tc-d">Liquid level, temperature and electrical connection before first use.</div></a>
@@ -510,6 +525,42 @@ footer a{color:#7fb0e6}
           </tbody>
         </table>
         <p style="font-size:13px;color:var(--steel)">Continuous running test: 25 cycles over one working day. Factory test passed.</p>
+      </section>
+
+      <div class="section-rule"></div>
+
+      <!-- 7. DIAGRAMS & DOWNLOADS -->
+      <section id="s13">
+        <div class="kicker"><span class="num">7</span> Diagrams &amp; Drawings</div>
+        <h2>Technical drawings &amp; lists (PDF downloads)</h2>
+        <p>The machine's reference drawings and lists are provided here as separate PDFs. Click any item to open or save it.</p>
+        <div class="dl-grid">
+          <a class="dl-card" href="assets/diagrams/mk390-io-list.pdf" download>
+            <span class="pdf">PDF</span>
+            <span><span class="dl-t">PLC Input / Output List</span><span class="dl-m">Digital &amp; analog I/O map · 41 KB</span></span>
+            <span class="arrow">↓</span>
+          </a>
+          <a class="dl-card" href="assets/diagrams/mk390-electrical-drawing.pdf" download>
+            <span class="pdf">PDF</span>
+            <span><span class="dl-t">Electrical Drawing</span><span class="dl-m">Schematic 4-10-B0909 · 43 KB</span></span>
+            <span class="arrow">↓</span>
+          </a>
+          <a class="dl-card" href="assets/diagrams/mk390-process-diagram.pdf" download>
+            <span class="pdf">PDF</span>
+            <span><span class="dl-t">Process Diagram</span><span class="dl-m">Process flow TC052 · 142 KB</span></span>
+            <span class="arrow">↓</span>
+          </a>
+          <a class="dl-card" href="assets/diagrams/mk390-mechanical-drawing.pdf" download>
+            <span class="pdf">PDF</span>
+            <span><span class="dl-t">Mechanical / GA Drawing</span><span class="dl-m">General arrangement · 1.8 MB</span></span>
+            <span class="arrow">↓</span>
+          </a>
+          <a class="dl-card" href="assets/diagrams/mk390-spares-list.pdf" download>
+            <span class="pdf">PDF</span>
+            <span><span class="dl-t">Recommended Spares List</span><span class="dl-m">Parts, codes &amp; lead times · 38 KB</span></span>
+            <span class="arrow">↓</span>
+          </a>
+        </div>
       </section>
 
     </div><!-- /wrap -->
