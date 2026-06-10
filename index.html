@@ -407,13 +407,58 @@ figure.screen img{width:auto;max-width:100%;max-height:340px;margin:0 auto;backg
       <section id="s4">
         <div class="kicker"><span class="num">2</span> Preparation for Use</div>
         <h2>Preparation Before Start-Up</h2>
-        <h3>4.0 Liquid Levels</h3>
-        <p>The process tank is filled manually. Fill liquid into the tank until the level switch is immersed in the liquid.</p>
-        <h3>4.1 Temperature Settings</h3>
-        <p>Set the temperature set points from the HMI. The process-tank temperature is then controlled to those set points.</p>
-        <h3>4.2 Mains Electrical Supply</h3>
-        <p>The system requires <strong>3-phase 415&nbsp;V&nbsp;AC, 50&nbsp;Hz with neutral</strong>. The total electrical load is approximately <strong>16&nbsp;kW</strong>. Earthing is mandatory.</p>
-        <div class="note danger"><span class="t">Earthing is mandatory</span>The machine must not be operated without proper earthing.</div>
+        <p>Commissioning and day-to-day start-up should be carried out only by personnel who are familiar with these instructions and with the relevant work-safety and accident-prevention regulations. The steps below take the machine from installation through to a degassed, heated cleaning bath that is ready for production. Read this section in full before the first start-up.</p>
+
+        <h3>Siting &amp; Installation</h3>
+        <p>Position the machine on a firm, level floor able to carry its filled weight — the process and weir tanks together hold around <strong>500&nbsp;litres</strong> of solution, so the unit weighs several hundred kilograms when full. Lock the castors once it is located.</p>
+        <ul>
+          <li>Leave clearance on all sides for lid opening, basket handling and service access, and keep the ultrasonic generator cooling vents clear so warm air cannot accumulate.</li>
+          <li>Keep the machine away from direct draughts, heat sources and heavy dust. Ambient conditions of roughly 10–40&nbsp;°C and 20–80% relative humidity are recommended.</li>
+          <li>Provide local fume extraction or good ventilation above the tank — a heated aqueous bath gives off water vapour and detergent mist.</li>
+          <li>Make sure the supply isolator, the drain point and (where used) the overhead hoist are all within easy reach of the operating position.</li>
+        </ul>
+
+        <h3>Filling the Process Tank</h3>
+        <p>The process tank is filled manually. Fill with clean water until the level switch is immersed; the weir (overflow) tank then holds the working reserve that the filtration pump circulates. Where possible use softened or de-mineralised water — it reduces scale on the heaters and tank, limits spotting on finished parts, and keeps the bath clearer for longer.</p>
+        <div class="note warn"><span class="t">Never run the bath dry</span>The heaters and ultrasonic resonators must always be fully covered by liquid. The low-level switch interlocks the heaters and ultrasonics, but the level should still be checked before every start-up and topped up as the bath evaporates during use.</div>
+
+        <h3>Preparing the Cleaning Solution</h3>
+        <p>The MK-390 runs on water plus an alkaline cleaning concentrate at <strong>2–3% by volume</strong>. Always add the concentrate <em>to</em> the water — never the other way around — and let the filtration pump circulate the bath for a few minutes to mix it thoroughly before heating.</p>
+        <ul>
+          <li>Use only the aqueous detergent specified for the machine. <strong>Do not</strong> add acidic or acid-forming additives, halogenated compounds (chlorine, fluorine, bromine or iodine), or flammable solvents — acids and halogens can pit the stainless tank and resonators, and flammables present an explosion risk.</li>
+          <li>Check the bath concentration at least once per shift and top up the concentrate as parts and drag-out deplete it; maintain the supplier's recommended concentration and pH.</li>
+          <li>Remember that a strongly alkaline bath (pH above about 10) can attack aluminium, zinc and some light alloys. Choose the concentration and contact time to suit the parts being cleaned.</li>
+        </ul>
+
+        <h3>Setting the Temperature</h3>
+        <p>Set the bath temperature on the HMI; the controller then heats the process tank to that set point and maintains it. Warm solution cavitates far more effectively than cold, so cleaning performance improves markedly with temperature.</p>
+        <ul>
+          <li>A working set point of <strong>55–65&nbsp;°C</strong> suits most aqueous cleaning. The machine is adjustable from 10–85&nbsp;°C and was factory-tested at 60&nbsp;°C.</li>
+          <li>Allow time for the bath to reach temperature before the first cycle. From cold this can take a while, given the tank volume and the 8&nbsp;kW of heating.</li>
+          <li>Do not exceed the detergent supplier's maximum temperature, and keep the lid closed during heat-up to save energy and reduce vapour.</li>
+        </ul>
+
+        <h3>Degassing the Bath</h3>
+        <p>Fresh solution and freshly added water are saturated with dissolved air. Until that air is driven off, it cushions the imploding cavitation bubbles and noticeably reduces cleaning power.</p>
+        <p>Before the first production cycle — and again after any large top-up — run the ultrasonics (or the dedicated degas function) on the filled, heated bath for roughly <strong>10–20&nbsp;minutes</strong> with no parts loaded, until cavitation sounds even and the characteristic fine hiss is established right across the tank.</p>
+
+        <h3>Mains Electrical Supply</h3>
+        <p>The system requires a <strong>3-phase 415&nbsp;V&nbsp;AC, 50&nbsp;Hz supply with neutral</strong>. The total connected load is approximately <strong>16&nbsp;kW</strong>, fed from a 63&nbsp;A protected supply. The final connection must be made by a licensed electrician in accordance with local wiring rules.</p>
+        <ul>
+          <li>Provide a dedicated, lockable isolator next to the machine, with appropriate over-current and earth-leakage protection.</li>
+          <li>Confirm correct phase rotation so the filtration pump turns the right way — a centrifugal pump run in reverse gives poor flow and can be damaged.</li>
+          <li>Verify protective-earth continuity before energising the machine.</li>
+        </ul>
+        <div class="note danger"><span class="t">Earthing is mandatory</span>The machine must not be operated without proper earthing. Correct earthing is essential both for operator safety and for stable ultrasonic performance — do not energise the machine until earth continuity has been confirmed.</div>
+
+        <h3>First Start-Up Sequence</h3>
+        <ol class="flow">
+          <li>Confirm the tank is filled to the level switch and the cleaning solution is mixed to <b>2–3%</b>.</li>
+          <li>Close the lid and switch on at the isolator.</li>
+          <li>Set the required <b>temperature</b> on the HMI and allow the bath to reach the set point.</li>
+          <li><b>Degas</b> the heated bath for 10–20&nbsp;minutes with no load.</li>
+          <li>Re-check the concentration and temperature, then load the first basket and start a cleaning <b>program</b> — see Section&nbsp;3.</li>
+        </ol>
       </section>
       <div class="section-rule"></div>
 
